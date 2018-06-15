@@ -5329,6 +5329,7 @@ declare namespace Stripe {
             retrieve(options: HeaderOptions, response?: IResponseFn<balance.IBalance>): Promise<balance.IBalance>;
             retrieve(response?: IResponseFn<balance.IBalance>): Promise<balance.IBalance>;
 
+            retrieveTransaction(id: string, data: IDataOptions, options: HeaderOptions, response?: IResponseFn<balance.IBalanceTransaction>): Promise<balance.IBalanceTransaction>;
             retrieveTransaction(id: string, options: HeaderOptions, response?: IResponseFn<balance.IBalanceTransaction>): Promise<balance.IBalanceTransaction>;
             retrieveTransaction(id: string, response?: IResponseFn<balance.IBalanceTransaction>): Promise<balance.IBalanceTransaction>;
 
